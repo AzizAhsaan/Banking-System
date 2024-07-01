@@ -8,14 +8,14 @@ declare type SearchParamProps = {
 // ========================================
 
 declare type SignUpParams = {
-  firstName?: string;
-  lastName?: string;
-  address1?: string;
-  city?: string;
-  state?: string;
-  postalCode?: string;
-  dateOfBirth?: string;
-  ssn?: string;
+  firstName: string;
+  lastName: string;
+  address1: string;
+  city: string;
+  state: string;
+  postalCode: string;
+  dateOfBirth: string;
+  ssn: string;
   email: string;
   password: string;
 };
@@ -31,7 +31,9 @@ declare type User = {
   userId: string;
   dwollaCustomerUrl: string;
   dwollaCustomerId: string;
-  name:string;
+  firstName: string;
+  lastName: string;
+  name: string;
   address1: string;
   city: string;
   state: string;
@@ -312,7 +314,7 @@ declare interface createBankAccountProps {
   accountId: string;
   bankId: string;
   fundingSourceUrl: string;
-  sharableId: string;
+  shareableId: string;
 }
 
 declare interface getBanksProps {
